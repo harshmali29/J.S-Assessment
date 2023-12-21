@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Slider Example</title>
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Slick Theme CSS (optional) -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Slick JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+
+    <div class="slider">
+        <div><img src="wallpaperflare.com_wallpaper (1).jpg" alt="Image 1"></div>
+        <div><img src="wallpaperflare.com_wallpaper (2).jpg" alt="Image 2"></div>
+        <div><img src="wallpaperflare.com_wallpaper.jpg" alt="Image 3"></div>
+        <!-- Add more slides as needed -->
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize the slider
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000, // Set the speed of the slideshow in milliseconds
+            });
+        });
+    </script>
+
+</body>
+
+</html>
